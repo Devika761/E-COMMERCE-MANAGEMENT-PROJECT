@@ -13,6 +13,7 @@ phone_number INT
 
 ALTER TABLE customers MODIFY phone_number BIGINT(20);
 
+-- Inserting customer details
 INSERT INTO customers
 VALUES
 (101,"John","john@gmail.com","2-23A flat Raidurg ",8908678932),
@@ -37,8 +38,7 @@ FOREIGN KEY (category_id) REFERENCES categories(category_id)
 
 SELECT * FROM products;
 
- -- ALTER TABLE products MODIFY COLUMN product_id VARCHAR(20);
--- product_id  :: ASIN 
+-- Inserting product details
 
 INSERT INTO products
 VALUES
@@ -58,6 +58,7 @@ CREATE TABLE IF NOT EXISTS categories(
     category_name VARCHAR(30)
 );
 
+--  Different categories for shopping 
 INSERT INTO categories
 VALUES
 (1, "Electronics"),
@@ -77,6 +78,7 @@ total_amount DECIMAL,
 FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 );
 
+--  inserting order details to order table
 INSERT INTO orders VALUES
 (11103, 101, '2023-10-04', 2500),
 (11104, 102, '2023-11-04', 1500),
@@ -100,6 +102,7 @@ FOREIGN KEY (order_id ) REFERENCES orders(order_id ),
 FOREIGN KEY (product_id ) REFERENCES products(product_id )
 );
 
+-- Inserting order details based on order_id and product_id
 
 INSERT INTO order_details VALUES 
 (1, 11103, 120111, 9, 999), 
@@ -120,9 +123,11 @@ amount_paid DECIMAL,
 FOREIGN KEY (order_id) REFERENCES orders(order_id)
 );
 
+-- Inserting payment details 
 INSERT INTO payments
 VALUES
 (9989,11103,'2023-10-14',"Cash",999),
+ (9879,11104,'2024-04-04',"online",1499),
 (9979,11105,'2024-05-04',"online",1999);
 
 SELECT * FROM payments;
@@ -138,9 +143,12 @@ restock_date DATE,
 FOREIGN KEY (product_id ) REFERENCES products(product_id )
 );
 
+-- inserting invertory details
+
 INSERT INTO inventory 
 VALUES
 (120111,9,'2023-10-10'),
+ (120112,5,'2023-11-10'),
 (120113,2,'2024-09-20');
 
 SELECT * FROM inventory;
