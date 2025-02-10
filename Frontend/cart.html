@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sora Mart</title>
+    <link rel="icon" href="./logo/logo-title.png">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="cart">
+    <div id="nav-bar">
+        <header id="nav-bar-header">
+
+
+
+            <div id="nav-bar-logo">
+                <a href="index.html"><img src="./logo/logo.png" alt="logo" height="60px" width="100px "></a>
+            </div>
+
+            <div id="nav-bar-Search">
+
+                <label for="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text" name="searching products" id="search" placeholder="Search for products">
+                </label>
+            </div>
+
+            <div id="nav-bar-titles">
+
+                <div id="nav-bar-shop" >
+                    <a  href="shop.html">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <b >shopping</b>
+                    </a>
+
+                </div>
+
+                <div id="nav-bar-logIn">
+                    <a href="login.html">
+                        <i class="fa-solid fa-user"></i>
+                        <b>Login</b>
+                    </a>
+                </div>
+
+                <div id="nav-bar-cart">
+                    <a href="cart.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <b>cart</b>
+                    </a>
+
+                </div>
+
+            </div>
+        </header>
+    </div>
+
+
+
+    <!---- Body===========================================================================================================================>
+
+
+
+<!- IMAGE SLIDER------------------------------------------------------------------>
+
+
+    <section id="page-header-cart">
+
+        <h1>#let's_talk</h1>
+        <p>LEAVE A MESSAGE,We love to hear from you &hearts;...</p>
+    </section>
+
+
+<!--Cart-->
+
+<section id="cart" class="section-p1">
+    <table width="100%">
+        <thead>
+            <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><a href="#"> <i class="fa fa-times-circle" aria-hidden="true"></i></a></td>
+                <td><img src="./product/f1.jpg" alt="f1"></td>
+                <td>Cartoon Astronaut T-Shirts</td>
+                <td>Rs.199/-</td>
+                <td><input type="number" value="1"></td>
+                <td>Rs.199/-</td>
+            </tr>
+
+            <tr>
+                <td><a href="#"> <i class="fa fa-times-circle" aria-hidden="true"></i></a></td>
+                <td><img src="./product/toy.jpg" alt="f2"></td>
+                <td>Cartoon Astronaut T-Shirts</td>
+                <td>Rs.1,999/-</td>
+                <td><input type="number" value="1"></td>
+                <td>Rs.1,999/-</td>
+            </tr>
+
+            <tr>
+                <td><a href="#"> <i class="fa fa-times-circle" aria-hidden="true"></i></a></td>
+                <td><img src="./product/k.jpg" alt="f3"></td>
+                <td>Cartoon Astronaut T-Shirts</td>
+                <td>Rs.299/-</td>
+                <td><input type="number" value="1"></td>
+                <td>Rs.299/-</td>
+            </tr>
+    
+            
+
+        </tbody>
+          </table>
+
+</section>
+
+<!--coupon------------------------------>
+<section id="cart-add">
+<div id="coupon">
+    <h3>Apply Coupon</h3>
+
+    <div>
+        <input type="text" placeholder="Enter Your Coupon">
+        <button class="normal">Apply</button>
+    </div>
+
+</div>
+
+<div id="subtotal">
+    <h3>Cart Totals</h3>
+    <table>
+        <tr>
+            <td>Cart Subtotal</td>
+            <td>Rs.2,497/-</td>
+        </tr>
+
+        <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+        </tr>
+
+        <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>Rs 2,497/-</strong></td>
+        </tr>
+    </table>
+<button class="normal">Proceed to checkout</button>
+</div>
+</section> 
+
+
+
+<!--Footer-------------------------------------------------->
+<footer class="section-p1" style="background-color: white;">
+    <div class="col">
+        <img id="logo-cart" class="logo " src="./logo/logo-cart-footer.png" alt="logo">
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>562 Indira Nagar ,Jyothi reddy Hostel,Hyderabad</p>
+        <p><strong>phone: </strong>+01 2222 365/(+91)01 2345 6789</p>
+        <p><Strong>Hours:</Strong>10:00 - 18:00, Mon - Sat</p>
+
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-square-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact us</a>
+    </div>
+
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google play</p>
+        <div class="row">
+            <img src="./pay/app.jpg" alt="app">
+            <img src="./pay/play.jpg" alt="play">
+        </div>
+        <p>Secured Payment Gateway</p>
+        <img src="./pay/pay.png" alt="pay">
+    </div>
+
+    <div class="copyright">
+        <p>UsCopyright © SoraMART MagicLtd. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+
+</html>
